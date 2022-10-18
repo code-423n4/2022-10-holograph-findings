@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "leosathya",
+  "risk": "2",
+  "title": "For Sending ETH HolographOperator.sol contract's using transfer() which may cause ETH to get stuck",
+  "issueId": 5,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/5"
+}
