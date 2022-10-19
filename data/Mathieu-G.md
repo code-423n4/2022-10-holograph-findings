@@ -77,7 +77,7 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1
 # Avoid Redundant Variable Casting
 
 
-In the `PA1D.sol` contract we can see this pattern in the following functions: `_payoutToken` and `_payoutTokens` where the function's argument is an `address` that is manually re-casted to a `ERC20` in the function whereas it can only be directly casted as `ERC20` in the argument definition. 
+In the `PA1D.sol` contract we can see this pattern in the following functions: `_payoutToken` and `_payoutTokens` where the function's argument is an `address` that is manually re-casted to a `ERC20` in the function whereas it can be directly casted as `ERC20` in the argument definition. 
 
 The recommendation is to remove this re-casting to save some gas, plus we are removing a useless variable by applying this.
 
