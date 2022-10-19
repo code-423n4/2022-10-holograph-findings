@@ -1,7 +1,3 @@
-https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/Holograph.sol
-Line  165, change *require* to *revert* with custom Error to save gas. 
-https://ethereum.stackexchange.com/questions/123381/when-should-i-use-require-vs-custom-revert-errors
-
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographBridge.sol
 Line 148: change *require* to *revert* with custom Error to save gas.
 
@@ -16,21 +12,10 @@ Line 228: change *require* to *revert* with custom Error to save gas.
 
 Line 250: change *require* to *revert* with custom Error to save gas.
 
-https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographGenesis.sol
-Line 115: change *require* to *revert* with custom Error to save gas.
-
-Line 130: change *require* to *revert* with custom Error to save gas.
-
-Line 135: change *require* to *revert* with custom Error to save gas.
-
-Line 139: change *require* to *revert* with custom Error to save gas.
-
-Line 140: change *require* to *revert* with custom Error to save gas.
-
-https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographInterfaces.sol
-Line 161: change *require* to *revert* with custom Error to save gas.
-
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol
+Line 682: change *i++* to *unchecked{++i}* to save gas.
+Line 772: change *i++* to *unchecked{++i}* to save gas.
+
 Line 241: change *require* to *revert* with custom Error to save gas.
 
 Line 309: change *require* to *revert* with custom Error to save gas.
