@@ -28,4 +28,4 @@ GAS SAVED: 48311.
 
 This Trick will reduce gas of deployment, but the gas of execution may increase from calling a function.
 
- ***** This could be used for all contracts and will save tons of gas *****
+ ***** This could be used for all contracts (like the onlyAdmin modifier) and will save tons of gas *****
