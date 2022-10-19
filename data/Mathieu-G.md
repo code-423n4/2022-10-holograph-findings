@@ -72,3 +72,69 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1
       totalBp = totalBp + bps[i];
       unchecked { ++i; }
     }
+
+
+# Avoid Redundant Variable Casting
+
+
+In the `PA1D.sol` contract we can see this pattern in the following functions: `_payoutToken` and `_payoutTokens` where the function's argument is an `address` that is manually re-casted to a `ERC20` in the function whereas it can only be directly casted as `ERC20` in the argument definition. 
+
+The recommendation is to remove this re-casting to save some gas, plus we are removing a useless variable by applying this.
+
+### _payoutToken
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L405:L419
+
+    function _payoutToken(ERC20 erc20token) private {
+      address payable[] memory addresses = _getPayoutAddresses();
+      uint256[] memory bps = _getPayoutBps();
+      uint256 length = addresses.length;
+      uint256 balance = erc20token.balanceOf(address(this));
+      require(balance > 10000, "PA1D: Not enough tokens to transfer");
+      uint256 sending;
+      //uint256 sent;
+      for (uint256 i = 0; i < length; i++) {
+        sending = ((bps[i] * balance) / 10000);
+        require(erc20token.transfer(addresses[i], sending), "PA1D: Couldn't transfer token");
+        // sent = sent + sending;
+      }
+    }
+
+### _payoutTokens
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L426:L443
+
+    function _payoutTokens(ERC20[] memory erc20tokens) private {
+      address payable[] memory addresses = _getPayoutAddresses();
+      uint256[] memory bps = _getPayoutBps();
+      ERC20 erc20;
+      uint256 balance;
+      uint256 sending;
+      for (uint256 t = 0; t < erc20tokens.length; t++) {
+        erc20 = erc20tokens[t];
+        balance = erc20.balanceOf(address(this));
+        require(balance > 10000, "PA1D: Not enough tokens to transfer");
+        // uint256 sent;
+        for (uint256 i = 0; i < addresses.length; i++) {
+          sending = ((bps[i] * balance) / 10000);
+          require(erc20.transfer(addresses[i], sending), "PA1D: Couldn't transfer token");
+          // sent = sent + sending;
+        }
+      }
+    }
+
+#### Additional Changes
+For this new declarations to success, we must also changes the argument of these functions: `getTokenPayout` and `getTokensPayout`
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L507
+
+    function getTokenPayout(ERC20 tokenAddress)
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L517
+
+    function getTokensPayout(ERC20[] memory tokenAddresses)
+
+The `PA1DInterface.sol` must be changed accordingly too:https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/interface/PA1DInterface.sol#L115:L117
+
+    function getTokenPayout(ERC20 tokenAddress) external;
+
+    function getTokensPayout(ERC20[] memory tokenAddresses) external;
+
