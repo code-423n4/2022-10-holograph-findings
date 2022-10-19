@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cdahlheimer",
+  "risk": "3",
+  "title": "enforcer/Holographer.sol uses delegatecall to a input-controlled function id",
+  "issueId": 24,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/24"
+}
