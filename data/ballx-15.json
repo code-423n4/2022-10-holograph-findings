@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "ballx",
+  "risk": "3",
+  "title": "ERC20 transactions with no return vaule will fail to transfer",
+  "issueId": 15,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/15"
+}
