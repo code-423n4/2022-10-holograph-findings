@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cdahlheimer",
+  "risk": "3",
+  "title": "HolographOperator.executeJob() ignores return value",
+  "issueId": 28,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/28"
+}
