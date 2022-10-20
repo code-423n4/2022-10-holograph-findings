@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "seyni",
+  "risk": "3",
+  "title": "Return value of `_utilityToken().transfer` is not checked in the `HolographOperator.executeJob` function",
+  "issueId": 57,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/57"
+}
