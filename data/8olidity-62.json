@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "8olidity",
+  "risk": "3",
+  "title": "A verifier with a signature address of zero is not rejected. Anyone is allowed to sign",
+  "issueId": 62,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/62"
+}
