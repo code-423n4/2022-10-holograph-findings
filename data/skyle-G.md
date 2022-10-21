@@ -40,6 +40,9 @@ Ln432 for (uint256 t = 0; t < tokenAddresses.length; t++) {
 Ln454 for (uint256 i = 0; i < addresses.length; i++) {
 Ln474 for (uint256 i = 0; i < addresses.length; i++) {
 
+contracts/HolographOperator.sol
+Ln781 for (uint256 i = 0; i < length; i++) {
+
 fix:
 - for (uint256 i = 0; i < length; i++) {
 + for (uint256 i; i < length; i++) {
