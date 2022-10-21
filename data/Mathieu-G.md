@@ -138,3 +138,6 @@ The `PA1DInterface.sol` must be changed accordingly too:https://github.com/code-
 
     function getTokensPayout(ERC20[] memory tokenAddresses) external;
 
+And with the proper import at the beginning of the file:
+
+    import "./ERC20.sol";
