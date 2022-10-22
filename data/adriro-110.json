@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "adriro",
+  "risk": "2",
+  "title": "Packed variables can be overlapped when packing a job to storage in the `HolographOperator` contract",
+  "issueId": 110,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/110"
+}
