@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Bnke0x0",
+  "risk": "3",
+  "title": "PA1D.sol, L396 - .transfer is bad practice",
+  "issueId": 82,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/82"
+}
