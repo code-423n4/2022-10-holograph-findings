@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "adriro",
+  "risk": "3",
+  "title": "ETH payout in `PA1D` contract could always fail if at least one receiver reverts",
+  "issueId": 104,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/104"
+}
