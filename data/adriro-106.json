@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "adriro",
+  "risk": "2",
+  "title": "Suspicious gas cost estimate in `_payoutEth()` function of `PA1D` contract",
+  "issueId": 106,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/106"
+}
