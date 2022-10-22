@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "adriro",
+  "risk": "2",
+  "title": "Pseudorandomness could be abused to favor an operator",
+  "issueId": 109,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/109"
+}
