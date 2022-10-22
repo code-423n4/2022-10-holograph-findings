@@ -122,3 +122,7 @@ The `doNotRevert` variable is set to `0` by executing a low level call to `mstor
 ## Incorrect variable size when decoding job in `getJobDetails` of the `HolographOperator` contract
 
 The variable `startTimestamp` should be defined as a `uint80` instead of `uint64` to align it with how it is initially packed (it occupies bits 16 to 96, `96-16=80`).
+
+## Consider using EIP712 to sign structured data in `deployHolographableContract` of the `HolographFactory` contract
+
+This function calculates a hash over the `DeploymentConfig` hash to verify the submitted signature. This is an ideal case to use the more user friendly EIP712 hashing and signing.
