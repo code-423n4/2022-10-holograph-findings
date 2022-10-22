@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "adriro",
+  "risk": "2",
+  "title": "Unclear usage of payable functions involved in the \"bridge in\" flow",
+  "issueId": 112,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/112"
+}
