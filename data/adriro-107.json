@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "adriro",
+  "risk": "2",
+  "title": "The function `getDeploymentBlock()` in the `Holographer` contract returns an incorrect data type",
+  "issueId": 107,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/107"
+}
