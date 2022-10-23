@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "imare",
+  "risk": "2",
+  "title": "storage is set before ``delegatecall`` is finished",
+  "issueId": 123,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/123"
+}
