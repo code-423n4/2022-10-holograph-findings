@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "imare",
+  "risk": "2",
+  "title": "possible attack vector because _verifySigner is not checking against null address",
+  "issueId": 122,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/122"
+}
