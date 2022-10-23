@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "2997ms",
+  "risk": "3",
+  "title": "UNSAFE USAGE OF ERC20 TRANSFER AND TRANSFERFROM",
+  "issueId": 118,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/118"
+}
