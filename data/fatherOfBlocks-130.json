@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "fatherOfBlocks",
+  "risk": "2",
+  "title": "loss of gas for the user because of not using msg.value",
+  "issueId": 130,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/130"
+}
