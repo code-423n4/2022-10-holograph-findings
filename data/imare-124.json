@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "imare",
+  "risk": "2",
+  "title": "dangerous implementation of ``ERC20H::onlyOwner`` modifier",
+  "issueId": 124,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/124"
+}
