@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cccz",
+  "risk": "2",
+  "title": "When a non-operator user calls the executeJob function, the user cannot get the rewarded utilityToken",
+  "issueId": 184,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/184"
+}
