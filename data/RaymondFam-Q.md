@@ -107,3 +107,18 @@ Here are some of the instances entailed:
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L527-L537
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L542-L552
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L557-L570
+
+## Expression for Calculated Values
+Long bytes of literal values assigned to constants may incur typo/human error. Considering assigning these constants with their corresponding expression. For instance, the following code line could be refactored to:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographBridge.sol#L126
+
+```
+  bytes32 constant _factorySlot = bytes32(uint256(keccak256('eip1967.Holograph.factory')) - 1)
+```
+Note: The calculated byte value may be included as a comment instead.
+
+## Require Statement at the Top of Code Block
+It is a good practice to allow an anticipated failed transaction to transpire as early as possible to avoid any unnecessary wastage of gas. `doNotRevert' is an operator inputted boolean which will determine whether or not the function call is going to revert. Consider placing the following require statement at the beginning of the code block: 
+ 
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographBridge.sol#L233
