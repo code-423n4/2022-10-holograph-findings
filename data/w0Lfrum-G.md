@@ -30,3 +30,11 @@ Can be changed to :
     }
 
 The value of `length` would not be greater than (2^256) - 1, so the value of `i` would not overflow. Hence an `unchecked` block can be used. 
+
+### 2. Using Custom Strings instead of `require` Strings to Save Gas
+
+Custom errors are available from solidity version 0.8.4. These custom errors avoid having to allocate space to store revert strings. Not defining the error strings in the custom errors also saves gas.
+
+### 3. In For Loops, `++i` Costs Much Lesser Gas than `i++`
+
+Saves 5 gas per iteration in the For loop.
