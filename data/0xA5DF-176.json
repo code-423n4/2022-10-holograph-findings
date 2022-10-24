@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0xA5DF",
+  "risk": "3",
+  "title": "Gas limit check is inaccurate, leading to an operator being able to fail a job intentionally  ",
+  "issueId": 176,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/176"
+}
