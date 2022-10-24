@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "corerouter",
+  "risk": "3",
+  "title": "The logic to validate that initial selected operator time slot is still active is not correct.",
+  "issueId": 155,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/155"
+}
