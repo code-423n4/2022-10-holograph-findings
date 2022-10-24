@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "chaduke",
+  "risk": "3",
+  "title": "Possible phishing attack to origin() in the HolopraphOperator contract",
+  "issueId": 187,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/187"
+}
