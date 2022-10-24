@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0xA5DF",
+  "risk": "3",
+  "title": "Failed jobs can't be recovered, leading to loss of beamed tokens",
+  "issueId": 208,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/208"
+}
