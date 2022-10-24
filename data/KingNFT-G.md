@@ -1,5 +1,5 @@
-1. Redundant statements
-(1)  the 'pop' function will implicitly calls delete on the removed element.
+1. Redundant statements: the 'array.pop' function will implicitly call delete on the removed element.
+(1)  
 ```
   function _removeTokenFromAllTokensEnumeration(uint256 tokenId) private {
     // ...
@@ -9,6 +9,8 @@
 ```
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L831
 
+(2)
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L883
 
 2. ++i/i++ should be unchecked{++i}/unchecked{i++} when it is not possible for them to overflow, as is the case when used in for- and while-loops
 (1)
