@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cloudjunky",
+  "risk": "2",
+  "title": "Unsafe usage of ERC20 transfer() instead of safeTransfer()",
+  "issueId": 162,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/162"
+}
