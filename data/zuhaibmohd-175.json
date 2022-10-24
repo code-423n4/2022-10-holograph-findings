@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "zuhaibmohd",
+  "risk": "3",
+  "title": "Unchecked Transfer in HolographOperator.executeJob resulting in locking of tokens",
+  "issueId": 175,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/175"
+}
