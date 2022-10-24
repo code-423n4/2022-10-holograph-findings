@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "ladboy233",
+  "risk": "2",
+  "title": "Implementation code does not align with the business requirement: Failed job is not handled in HolographOperator.sol",
+  "issueId": 172,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/172"
+}
