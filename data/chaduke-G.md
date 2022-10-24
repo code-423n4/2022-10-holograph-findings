@@ -78,6 +78,14 @@ Line 282: change *require* to *revert* with custom Error to save gas.
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographTreasury.sol
 Line 154: change *require* to *revert* with custom Error to save gas.
 
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographFactory.sol#L143
+change 
+        bytes memory initPayload
+to
+      bytes calldata initPayload
+to save gas
+
+
 
 
 
