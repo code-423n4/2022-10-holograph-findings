@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0x52",
+  "risk": "2",
+  "title": "PA1D#_payoutEth calculates gas cost incorrectly",
+  "issueId": 164,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/164"
+}
