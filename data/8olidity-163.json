@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "8olidity",
+  "risk": "2",
+  "title": "External call of operator may lead to an attacker stealing utilityToken",
+  "issueId": 163,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/163"
+}
