@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "rvierdiiev",
+  "risk": "3",
+  "title": "It's possible to mint more then type(uint256).max ERC20 tokens",
+  "issueId": 177,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/177"
+}
