@@ -98,3 +98,12 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L356
 
 Consider bounding the loop where possible to avoid unnecessary gas wastage and denial of service.
+
+## Commented Code
+Throughout the codebase `HolographERC721`, there are lines of code that have been commented out with //. This can lead to confusion and is detrimental to overall code readability. Consider removing commented out lines of code that are no longer needed.
+
+Here are some of the instances entailed:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L527-L537
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L542-L552
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L557-L570
