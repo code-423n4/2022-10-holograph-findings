@@ -2,6 +2,7 @@
 Fitting your data in fixed-size 32 byte words is much cheaper than using arbitrary-length types (string in this case). Remember that bytes32 uses less gas because it fits in a single EVM word. Typically, any fixed size variable in solidity is cheaper than dynamically sized ones. Here are some of the instances entailed:
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/src/HolographBridge.sol#L225
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L171-L176
 
 Please visit the following link for more details on favoring bytes32 over string:
 
