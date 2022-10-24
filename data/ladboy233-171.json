@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "ladboy233",
+  "risk": "3",
+  "title": "HolographFactory.sol cross-chain deployment is vulnerable to front-running: User control address A in one chain does not mean user control address in chain B",
+  "issueId": 171,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/171"
+}
