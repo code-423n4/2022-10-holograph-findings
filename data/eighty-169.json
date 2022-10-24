@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "eighty",
+  "risk": "2",
+  "title": "Using knowledge from previous blocks can result in Backup Operator manipulation",
+  "issueId": 169,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/169"
+}
