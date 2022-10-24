@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "ladboy233",
+  "risk": "2",
+  "title": "Implementation code does not align with the business requirement: Users are not charged with withdrawn fee when user unbound token in HolographOperator.sol",
+  "issueId": 142,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/142"
+}
