@@ -12,6 +12,7 @@ https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a83524
 (2)
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L883
 
+
 2. ++i/i++ should be unchecked{++i}/unchecked{i++} when it is not possible for them to overflow, as is the case when used in for- and while-loops
 (1)
 ```
@@ -35,6 +36,7 @@ https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a83524
 (3)
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L357
 
+
 3.  ++i costs less gas than i++, especially when it’s used in for-loops (--i/i-- too)
 (1)
 ```
@@ -51,4 +53,5 @@ https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a83524
 
 4. State variables should be cached in stack variables rather than re-reading them from storage
 (1) '_ownedTokensCount[from]' can be cached in stack
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L778-L779
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L842-L843
