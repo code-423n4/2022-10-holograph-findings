@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "RaoulSchaffranek",
+  "risk": "2",
+  "title": "Admin accounts with critical permissions cannot be set to multi-sig wallets at initialization",
+  "issueId": 149,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/149"
+}
