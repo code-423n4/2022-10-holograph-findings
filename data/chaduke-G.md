@@ -96,6 +96,14 @@ for (uint256 i; i < len ; unchecked{++i}) {
 ```
 the gas saving is due to avoid unnecessary initialization of i, caching the result of reserveredTypes.length and the unchecked directive with replacment of ++i instead of i++.
 
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographGenesis.sol#L130
+Use custom error if-revert statement instead of require-error-message to save gas. This suggestions go too all other
+require-error-message statements. 
+
+
+
+
+
 
 
 
