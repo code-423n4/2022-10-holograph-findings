@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Lambda",
+  "risk": "2",
+  "title": "HolographERC721.approve not EIP-721 compliant",
+  "issueId": 205,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/205"
+}
