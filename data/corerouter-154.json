@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "corerouter",
+  "risk": "2",
+  "title": "The function proceeds successfully event transfer() does not succeed.",
+  "issueId": 154,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/154"
+}
