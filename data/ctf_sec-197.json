@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "ctf_sec",
+  "risk": "2",
+  "title": "Job executor (non-operator) cannot claim their token after helping execute the job if operator and fallback operator failed to execute",
+  "issueId": 197,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/197"
+}
