@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Lambda",
+  "risk": "2",
+  "title": "Issues with gas price handling in HolographOperator",
+  "issueId": 206,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/206"
+}
