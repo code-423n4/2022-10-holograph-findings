@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0x52",
+  "risk": "2",
+  "title": "PA1D#bidSharesForToken returns incorrect bidShares.creator.value",
+  "issueId": 180,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/180"
+}
