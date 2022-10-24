@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "chaduke",
+  "risk": "3",
+  "title": "Non-synchoronzied setters for HolographFactory",
+  "issueId": 183,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/183"
+}
