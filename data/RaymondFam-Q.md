@@ -173,3 +173,18 @@ Consider importing the OpenZeppelin contracts instead of re-implementing or copy
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L104
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L115
+
+## Minimization of Truncation
+As an example, each respective code line below may be refactored to minimize the frequency of truncation:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/module/LayerZeroModule.sol#L274
+
+```
+    return (gasPrice * gasLimit * 11 * dstPriceRatio / 10**11, nativeFee);
+```
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/module/LayerZeroModule.sol#L293
+
+```
+    return gasPrice * gasLimit * 11 * dstPriceRatio / 10**11;
+```
+Note: The original code expression may be commented to augment the refactored expression. 
