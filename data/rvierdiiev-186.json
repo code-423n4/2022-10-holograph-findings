@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "rvierdiiev",
+  "risk": "2",
+  "title": "Lack of input validation in Paid._configurePayouts may lead to ddos in Paid._payoutTokens",
+  "issueId": 186,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/186"
+}
