@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0xA5DF",
+  "risk": "3",
+  "title": "Beaming job might freeze on dest chain under some conditions, leading to owner loosing (temporarily) access to token",
+  "issueId": 170,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/170"
+}
