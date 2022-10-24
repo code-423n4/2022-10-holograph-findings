@@ -126,3 +126,15 @@ The variable `startTimestamp` should be defined as a `uint80` instead of `uint64
 ## Consider using EIP712 to sign structured data in `deployHolographableContract` of the `HolographFactory` contract
 
 This function calculates a hash over the `DeploymentConfig` hash to verify the submitted signature. This is an ideal case to use the more user friendly EIP712 hashing and signing.
+
+## `supportsInterface` should return true for the EIP165 interface ID in `ERC20H` and `ERC721H`
+
+Both contracts define the `supportsInterface(bytes4)` function and return just `false` for all cases. According to the EIP-165 specification, this function should return `true` when called with the value `0x01ffc9a7` (the interface id for the `IERC165` interface).
+
+Change the implementation to:
+
+```
+function supportsInterface(bytes4 interfaceId) external pure returns (bool) {
+  return interfaceId == type(IERC165).interfaceId;
+}
+```
