@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Rolezn",
+  "risk": "2",
+  "title": "`_verifySigner` check can be bypassed",
+  "issueId": 199,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/199"
+}
