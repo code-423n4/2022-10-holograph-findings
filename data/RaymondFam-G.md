@@ -121,12 +121,13 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/Hol
 ```
       if (!(msg.sender == _holograph().getBridge() || msg.sender == _holograph().getOperator())) {
 ```
-## `uint256` Can be Cheaper Than `uint8`
+## `uint256` Can be Cheaper Than `uint8` and Other Unsigned Integer Type of Smaller Bit Size
 When dealing with function arguments or memory values, there is no inherent benefit because the compiler does not pack these values. Your contract’s gas usage may be higher because the EVM operates on 32 bytes at a time. Therefore, if the element is smaller than that, the EVM must use more operations in order to reduce the size of the element from 32 bytes to the desired size. The EVM needs to properly enforce the limits of this smaller type.
 
 It is only more efficient when you can pack variables of uint8 into the same storage slot with other neighboring variables smaller than 32 bytes. Here are some of the instances entailed:
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographFactory.sol#L323
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographBridge.sol#L192
 
 ## += and -= Costs More Gas
 `+=` generally costs 22 more gas than writing out the assigned equation explicitly. The amount of gas wasted can be quite sizable when repeatedly operated in a loop. As an example, the following line of code could be rewritten as:
