@@ -85,6 +85,16 @@ to
       bytes calldata initPayload
 to save gas
 
+we are converting the following code to save gas, https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographRegistry.sol#L175-L177
+
+the new code is
+```
+uint len = reservedTypes.length;
+for (uint256 i; i < len ; unchecked{++i}) {
+      _reservedTypes[reservedTypes[i]] = true;
+ }
+```
+the gas saving is due to avoid unnecessary initialization of i, caching the result of reserveredTypes.length and the unchecked directive with replacment of ++i instead of i++.
 
 
 
