@@ -3,6 +3,7 @@ Fitting your data in fixed-size 32 byte words is much cheaper than using arbitra
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/src/HolographBridge.sol#L225
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L171-L176
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L142-L143
 
 Please visit the following link for more details on favoring bytes32 over string:
 
