@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "rvierdiiev",
+  "risk": "2",
+  "title": "Malicious owner can disallow fee recipient to recieve already earned fees",
+  "issueId": 188,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/188"
+}
