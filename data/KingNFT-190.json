@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "KingNFT",
+  "risk": "2",
+  "title": "Risk of bridging out any ERC721 token ID without user permission",
+  "issueId": 190,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/190"
+}
