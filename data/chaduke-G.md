@@ -101,6 +101,19 @@ Use custom error if-revert statement instead of require-error-message to save ga
 require-error-message statements. 
 
 
+https://code4rena.com/contests/2022-10-holograph-contest/submit
+change the following line 
+require(_operatorJobs[hash] > 0, "HOLOGRAPH: invalid job");
+to
+if (_operatorJobs[hash] <> 0 ) revert HOLOGRAPHInvalid job();
+
+That is, "<>" is cheapter than ">" and custom error is cheaper than string. 
+
+similar suggestions to other require statements like line 350 and 354.
+
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L446
+just change the function to *private* will do the same thing and save gas
+
 
 
 
