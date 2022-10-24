@@ -122,3 +122,54 @@ Note: The calculated byte value may be included as a comment instead.
 It is a good practice to allow an anticipated failed transaction to transpire as early as possible to avoid any unnecessary wastage of gas. `doNotRevert' is an operator inputted boolean which will determine whether or not the function call is going to revert. Consider placing the following require statement at the beginning of the code block: 
  
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographBridge.sol#L233
+
+## Use `delete` to Clear Variables
+`delete a` assigns the initial value for the type to `a`. i.e. for integers it is equivalent to `a = 0`, but it can also be used on arrays, where it assigns a dynamic array of length zero or a static array of the same length with all elements reset. For structs, it assigns a struct with all members reset. Similarly, it can also be used to set an address to zero address. It has no effect on whole mappings though (as the keys of mappings may be arbitrary and are generally unknown). However, individual keys and what they map to can be deleted: If `a` is a mapping, then `delete a[x]` will delete the value stored at x.
+
+The delete key better conveys the intention and is also more idiomatic. Consider replacing assignments of zero with delete statements. Here are some of the instances entailed:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L399
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L924
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L1132-L1136
+
+## `block.timestamp` Unreliable
+The use of `block.timestamp` as part of the time checks can be slightly altered by miners/validators to favor them in contracts that have logic strongly dependent on them.
+
+Consider taking into account this issue and warning the users that such a scenario could happen. If the alteration of timestamps cannot affect the protocol in any way, consider documenting the reasoning and writing tests enforcing that these guarantees will be preserved even if the code changes in the future.
+
+Here are some of the instances entailed:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L345
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L531
+
+The following instance entailing the generation of a random number is of particular concern although it has been documented that `_jobNonce()` will have the risk taken care of:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L499
+
+## Inadequate NatSpec
+Solidity contracts can use a special form of comments, i.e., the Ethereum Natural Language Specification Format (NatSpec) to provide rich documentation for functions, return variables and more. Please visit the following link for further details:
+
+https://docs.soliditylang.org/en/v0.8.16/natspec-format.html
+
+Here are some of the functions lacking @param comments:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L445
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L484
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L1122
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L1160
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L1185
+
+## Open TODOs
+Open TODOs can point to architecture or programming issues that still need to be resolved. Consider resolving them before deploying.
+
+Here is one of the instances entailed:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L274-L277
+
+## Not Completely Using OpenZeppelin Contracts
+OpenZeppelin maintains a library of standard, audited, community-reviewed, and battle-tested smart contracts. Instead of always importing these contracts, 3xcalibur project re-implements them in some cases. This increases the amount of code that the 3xcalibur team will have to maintain and miss all the improvements and bug fixes that the OpenZeppelin team is constantly implementing with the help of the community.
+
+Consider importing the OpenZeppelin contracts instead of re-implementing or copying them. These contracts can be extended to add the extra functionalities required by 3xcalibur. Here are some of the instances entailed:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L104
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L115
