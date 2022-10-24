@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "ctf_sec",
+  "risk": "2",
+  "title": "PA1D.sol#initPA1D is vulnerable to front-running",
+  "issueId": 214,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/214"
+}
