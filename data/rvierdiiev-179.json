@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "rvierdiiev",
+  "risk": "2",
+  "title": "HolographERC721 can mint token to contract that doesn't support it",
+  "issueId": 179,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/179"
+}
