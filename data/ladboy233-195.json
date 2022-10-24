@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "ladboy233",
+  "risk": "2",
+  "title": "The miner can affect the randomness in crossChainMessage.sol by manipulating the block.timestamp",
+  "issueId": 195,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/195"
+}
