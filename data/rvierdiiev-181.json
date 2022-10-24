@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "rvierdiiev",
+  "risk": "2",
+  "title": "No input checkings for royalties bps in PA1D contract",
+  "issueId": 181,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/181"
+}
