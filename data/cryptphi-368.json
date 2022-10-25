@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cryptphi",
+  "risk": "3",
+  "title": "Users can create beam request for a destination chain without paying a fee.",
+  "issueId": 368,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/368"
+}
