@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0xA5DF",
+  "risk": "3",
+  "title": "An attacker can lock operator out of the pod by setting gas limit that's higher than the block gas limit of dest chain",
+  "issueId": 414,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/414"
+}
