@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "tonisives",
+  "risk": "2",
+  "title": "Tokens are potentially lost with LayerZero failure.",
+  "issueId": 282,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/282"
+}
