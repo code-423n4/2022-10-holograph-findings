@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cccz",
+  "risk": "2",
+  "title": "PA1D._payoutToken/_payoutTokens might revert when sending = 0 and tokenAddress is a revert on zero value transfers token.",
+  "issueId": 232,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/232"
+}
