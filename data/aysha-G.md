@@ -91,4 +91,30 @@ https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a83524
 ==========================================================
 
 
+Events Indexing
+Events should use the maximum amount of indexed fields: up to three parameters. This makes it easier to filter for specific values in front-ends.
+
+Proof of Concept
+
+Recommended Mitigation Steps Add indexed fields to these events so that they have the maximum number of indexed fields possible.
+
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L153
+==========================================================
+
+Copying a Full Array From Storage to Memory Isn’t Optimal
+Here, what’s happening is a full copy of a storage array in memory, and then a second copy of each memory element. The code should be optimized that way:
+address payable[] storage addresses = _getPayoutAddresses();
+uint256[] storage bps = _getPayoutBps();
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L427-L428
+address payable[] storage addresses = _getPayoutAddresses();
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L452
+==========================================================
+
+Empty Blocks Should Be Removed Or Emit Something
+The code should be refactored such that they no longer exist, or the block should do something useful, such as emitting an event or reverting. If the contract is meant to be extended, the contract should be abstract and the function signatures be added without any default implementation. If the block is an empty if-statement block to avoid doing subsequent checks in the else-if/else conditions, the else-if/else conditions should be nested under the negation of the if-statement, because they involve different classes of checks, which may lead to the introduction of errors when the code is later modified (if(x){}else if(y){...}else{...} => if(!x){if(y){...}else{...}})
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/abstract/ERC20H.sol#L212
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/abstract/ERC721H.sol#L212
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/Holographer.sol#L223
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC20.sol#L251
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L962
 
