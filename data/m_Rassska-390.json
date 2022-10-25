@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "m_Rassska",
+  "risk": "3",
+  "title": "Lack of zero address check for ecrecover allows to bypass the signature verification",
+  "issueId": 390,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/390"
+}
