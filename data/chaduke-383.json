@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "chaduke",
+  "risk": "3",
+  "title": "Non-safe version of transfer function used",
+  "issueId": 383,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/383"
+}
