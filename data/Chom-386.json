@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Chom",
+  "risk": "2",
+  "title": "If contract that doesn't support receiving ETH bridge NFT, it may lose ETH gas fee refund",
+  "issueId": 386,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/386"
+}
