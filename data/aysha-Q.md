@@ -84,3 +84,9 @@ uint256(1) == 1 ? true
 
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC20.sol#L755
 ==========================================================
+
+Dangerous strict equalities: Use of strict equalities with tokens/Ether can accidentally/maliciously cause unexpected behavior. Consider using >= or <= instead of == for such variables depending on the contract logic. 
+https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L477
+==========================================================
