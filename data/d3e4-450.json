@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "d3e4",
+  "risk": "2",
+  "title": "Use of payable.transfer() may prevent the sending of cross-chain bridge request messages",
+  "issueId": 450,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/450"
+}
