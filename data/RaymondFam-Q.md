@@ -167,9 +167,9 @@ Here is one of the instances entailed:
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L274-L277
 
 ## Not Completely Using OpenZeppelin Contracts
-OpenZeppelin maintains a library of standard, audited, community-reviewed, and battle-tested smart contracts. Instead of always importing these contracts, 3xcalibur project re-implements them in some cases. This increases the amount of code that the 3xcalibur team will have to maintain and miss all the improvements and bug fixes that the OpenZeppelin team is constantly implementing with the help of the community.
+OpenZeppelin maintains a library of standard, audited, community-reviewed, and battle-tested smart contracts. Instead of always importing these contracts, Holograph project re-implements them in some cases. This increases the amount of code that the Holograph team will have to maintain and miss all the improvements and bug fixes that the OpenZeppelin team is constantly implementing with the help of the community.
 
-Consider importing the OpenZeppelin contracts instead of re-implementing or copying them. These contracts can be extended to add the extra functionalities required by 3xcalibur. Here are some of the instances entailed:
+Consider importing the OpenZeppelin contracts instead of re-implementing or copying them. These contracts can be extended to add the extra functionalities required by Holograph. Here are some of the instances entailed:
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L104
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L115
