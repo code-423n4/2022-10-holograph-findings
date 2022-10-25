@@ -117,3 +117,14 @@ Throughout the codebase there are lines of code that have been commented out wit
 The comment of the following instance mentioned 2300 gas stipend for each 1x. However, the 23300 was used in the code instead.
 
 [Line3 386 - 388](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L386-L388)
+
+## MISSING NATSPEC
+According to the following documentation:
+
+https://docs.soliditylang.org/en/v0.8.16/natspec-format.html
+
+Some instances are missing @param.
+
+[Line 484](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L484)
+[Line 1160](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L1160)
+[Line 1185](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L1185)
