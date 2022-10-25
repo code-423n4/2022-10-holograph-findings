@@ -55,6 +55,88 @@ NatSpec statements (including `@dev @param`) do not relate directly to the funct
 ___
 ___
 
+### Missing NatSpec `@return` statements
+The functions in this section have complete NatSpec, apart from missing `@return` statements. Below is one example:
+
+[HolographBridge.sol: L158-162](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L158-L162)
+```solidity
+   * @notice Used internally to initialize the contract instead of through a constructor
+   * @dev This function is called by the deployer/factory when creating a contract
+   * @param initPayload abi encoded payload to use for contract initilaization
+   */
+  function init(bytes memory initPayload) external override returns (bytes4) {
+```
+Similarly for the following functions:
+
+[HolographBridge.sol: L286-301](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L286-L301)
+
+[HolographBridge.sol: L439-442](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L439-L442)
+
+[HolographBridge.sol: L459-462](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L459-L462)
+
+[HolographBridge.sol: L479-482](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L479-L482)
+
+[HolographBridge.sol: L489-492](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L489-L492)
+
+[HolographBridge.sol: L509-512](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L509-L512)
+
+[HolographBridge.sol: L529-531](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L529-L531)
+
+[HolographBridge.sol: L538-540](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L538-L540)
+
+[HolographBridge.sol: L547-549](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L547-L549)
+
+[HolographBridge.sol: L557-559](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L557-L559)
+
+[HolographBridge.sol: L566-568](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L566-L568)
+
+Multiple instances of NatSpec missing `@return` statements only also occur in the remaining contracts
+___
+
+### Missing `@param` statements
+The functions in this section are missing `@param` statements (as well as `@return` statements in a few cases). Below is one example:
+
+[HolographOperator.sol: L442-445](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L442-L445)
+```solidity
+   * @dev Purposefully made to be external so that Operator can call it during executeJob function
+   *      Check the executeJob function to understand it's implementation
+   */
+  function nonRevertingBridgeCall(address msgSender, bytes calldata payload) external payable {
+```
+Missing: `@param msgSender` and `@param payload`
+
+Similarly for the following:
+
+[HolographOperator.sol: L481-484](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L481-L484)
+Missing: `@param bridgeInRequestPayload`
+
+[HolographOperator.sol: L574-590](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L574-L590)
+Missing: `@param msgSender`
+
+[HolographOperator.sol: L1120-1122](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L1120-L1122)
+Missing: `@param pod` and `@param operatorIndex`
+
+[HolographOperator.sol: L1158-1160](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L1158-L1160)
+Missing: `@return` and `@param pod`
+
+[HolographOperator.sol: L1196-1198](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L1196-L1198)
+Missing: `@return` and `@param contractAddress`
+
+[HolographFactory.sol: L156-163](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographFactory.sol#L156-L163)
+Missing: `@return` and `@param payload`
+
+[HolographFactory.sol: L173-182](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographFactory.sol#L173-L182)
+Missing: `@return` and `@param payload`
+
+[HolographFactory.sol: L307-309](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographFactory.sol#L307-L309)
+Missing: `@return` and `@param contractAddress`
+
+[HolographFactory.sol: L318-326](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographFactory.sol#L318-L326)
+Missing: `@return` and `@param r`, `@param s`, `@param v`, `@param hash` and `@param signer`
+
+Multiple instances also occur in `LayerZeroModule.sol`, `PA1D.sol`, `HolographERC721.sol`, `HolographERC20.sol`, `ERC721H.sol`, and `ERC20H.sol` 
+___
+___
 
 ### Typos
 ___
