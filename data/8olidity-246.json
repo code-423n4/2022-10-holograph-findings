@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "8olidity",
+  "risk": "2",
+  "title": "msgSender is incorrectly set cannot be sent ()",
+  "issueId": 246,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/246"
+}
