@@ -17,3 +17,7 @@ https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a83524
 ```
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L263
 
+4.  [non-critical] Incorrect NatSpec comments
+(1)
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L196
+
