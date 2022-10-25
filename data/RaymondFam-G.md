@@ -129,6 +129,7 @@ It is only more efficient when you can pack variables of uint8 into the same sto
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographFactory.sol#L323
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographBridge.sol#L192
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L229
 
 ## += and -= Costs More Gas
 `+=` generally costs 22 more gas than writing out the assigned equation explicitly. The amount of gas wasted can be quite sizable when repeatedly operated in a loop. As an example, the following line of code could be rewritten as:
@@ -137,6 +138,13 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographFac
 
 ```
       v = v + 27;
+```
+Similarly, the following code line should be refactored as:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L633
+
+```
+    _totalSupply = _totalSupply - amount;
 ```
 ## Payable Access Control Functions Costs Less Gas
 Consider marking functions with access control as `payable`. This will save 20 gas on each call by their respective permissible callers for not needing to have the compiler check for `msg.value`. Here are some of the instances entailed:
