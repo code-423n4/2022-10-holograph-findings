@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Trust",
+  "risk": "2",
+  "title": "MED - Royalty system couples receiving address and collection request address, which may cause marketplaces to not be able to collect.",
+  "issueId": 455,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/455"
+}
