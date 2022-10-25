@@ -19,6 +19,10 @@ HolographERC721.sol#L464     require((ERC165(to).supportsInterface(ERC165.suppor
 &&ERC721TokenReceiver(to).onERC721Received(address(this), from, tokenId, data) ==ERC721TokenReceiver.onERC721Received.selector)
 ,"ERC721: onERC721Received fail");
 ```
+### [Holographer.sol](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/Holographer.sol#L166)
+```
+Holographer.sol#L166     require(success && selector == InitializableInterface.init.selector, "initialization failed");
+```
 > Please, note that this might not hold true at a higher number of runs for the Optimizer (10k). However, it indeed is true at 200.
 
 ## 2. DUPLICATED CONDITIONS SHOULD BE REFACTORED TO A MODIFIER OR FUNCTION TO SAVE DEPLOYMENT COSTS
