@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cccz",
+  "risk": "2",
+  "title": "Incorrect check for successful token transfer ",
+  "issueId": 231,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/231"
+}
