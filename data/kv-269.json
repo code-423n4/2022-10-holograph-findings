@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "kv",
+  "risk": "2",
+  "title": "_safeMint() should be used rather than _mint() wherever possible",
+  "issueId": 269,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/269"
+}
