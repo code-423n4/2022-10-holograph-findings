@@ -104,3 +104,15 @@ Assembly is a low-level language that is harder to parse by readers, consider in
 Whenever possible, use OpenZeppelin’s ECDSA library which has been time tested in preventing replay attack of signature malleability associated with `ecrecover'. The issue could arise from the non-unique value of v and an s value that could end up in the upper half of the modulo set. Here are the instances found.
 
 [Lines 333 - 334](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographFactory.sol#L333-L334)
+
+## COMMENTED CODE LINES
+Throughout the codebase there are lines of code that have been commented out with //. This can lead to confusion and is detrimental to overall code readability. Consider removing commented out lines of code that are no longer needed. Here are the instances found.
+
+[Lines 527 - 537](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L527-L537)
+[Lines 542 - 552](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L542-L552)
+[Lines 557 - 570](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L557-L570)
+
+## COMMENT AND CODE MISMATCH
+The comment of the following instance mentioned 2300 gas stipend for each 1x. However, the 23300 was used in the code instead.
+
+[Line3 386 - 388](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L386-L388)
