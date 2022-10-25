@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0x52",
+  "risk": "3",
+  "title": "If bridge request fails users tokens are burned with no way to recover",
+  "issueId": 421,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/421"
+}
