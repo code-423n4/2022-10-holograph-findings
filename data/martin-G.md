@@ -743,3 +743,19 @@ File: /contracts/enforcer/PA1D.sol
 ```
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol
+
+### G-09 `safeTransferFrom()` should be used rather than `transferFrom()` wherever possible
+
+The transferFrom() method is used instead of safeTransferFrom(), presumably to save gas.
+
+_There are **2** instances of this issue:_
+
+```solidity
+File: /contracts/HolographOperator.sol
+
+839: require(_utilityToken().transferFrom(msg.sender, address(this), amount), "HOLOGRAPH: token transfer failed");
+
+889: require(_utilityToken().transferFrom(msg.sender, address(this), amount), "HOLOGRAPH: token transfer failed");
+```
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol
