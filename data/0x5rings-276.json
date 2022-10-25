@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0x5rings",
+  "risk": "2",
+  "title": "UtilityToken transfers may fail using the `transferFrom()` function of an erc20 contract may freeze the user's token",
+  "issueId": 276,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/276"
+}
