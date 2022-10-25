@@ -38,3 +38,13 @@ Custom errors are available from solidity version 0.8.4. These custom errors avo
 ### 3. In For Loops, `++i` Costs Much Lesser Gas than `i++`
 
 Saves 5 gas per iteration in the For loop.
+
+### 4. Using `1e10` Instead of `10**10`
+
+**Lines of Code:**
+
+[LayerZeroModule.sol#L274](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/module/LayerZeroModule.sol#L274)
+
+[LayerZeroModule.sol#L293](https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/module/LayerZeroModule.sol#L293)
+
+Using `1e10` Instead of `10**10` saves gas.
