@@ -1,6 +1,6 @@
 ## Gas Optimizations
 
-### G-01 Use a local variable to cache repeated calls to .length in for loops
+### G-01 Use a local variable to cache .length calls in for loops
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L564
 
@@ -33,7 +33,7 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOpe
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L871
 
 
-### G-03 In the EVM, there is no opcode for >= or <=. When using greater than or equal, two operations are performed: > and = and the same for <=. Use strict comparison operators to save gas
+### G-03 In the EVM, there is no opcode for >= or <=. When using greater than or equal, two operations are performed: > and = and the same for <=. Use strict comparison operators to save gas.
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L469
 
@@ -83,7 +83,7 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographFac
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographFactory.sol#L300
 
 
-### G-06 Using `> 0` is less efficient than using `!= 0`. Use `!= 0` when comparing uint variables to zero, which cannot hold values below zero
+### G-06 Using `> 0` is less efficient than using `!= 0`. Use `!= 0` when comparing uint variables to zero, which cannot hold values below zero.
 
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L309
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L350
