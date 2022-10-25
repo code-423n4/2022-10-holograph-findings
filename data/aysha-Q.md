@@ -79,7 +79,10 @@ https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a83524
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC20.sol#L251
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC721.sol#L962
 ==========================================================
-This is always true
+Tautology or contradiction
+Tautologies (always true) or contradictions (always false) indicate potential flawed logic or redundant checks. e.g. x >= 0 which is always true if x is uint. 
+https://github.com/crytic/slither/wiki/Detector-Documentation#tautology-or-contradiction
+
 uint256(1) == 1 ? true
 
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/HolographERC20.sol#L755
@@ -90,3 +93,5 @@ https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-e
 
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L477
 ==========================================================
+
+Dangerous usage of tx.origin: Use of tx.origin for authorization may be abused by a MITM malicious contract forwarding calls from the legitimate user who interacts with it. Use msg.sender instead. 
