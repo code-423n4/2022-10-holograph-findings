@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "m9800",
+  "risk": "2",
+  "title": "Burned tokens can be transferred by Source in HolographERC721.sol",
+  "issueId": 403,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/403"
+}
