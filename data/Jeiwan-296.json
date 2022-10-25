@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Jeiwan",
+  "risk": "2",
+  "title": "PA1D contract doesn't have a user-controlled owner or admin",
+  "issueId": 296,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/296"
+}
