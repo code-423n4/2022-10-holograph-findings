@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "brgltd",
+  "risk": "2",
+  "title": " Replace `.transfer` with `.call` to send ether.",
+  "issueId": 431,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/431"
+}
