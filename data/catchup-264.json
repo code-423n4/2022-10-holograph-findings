@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "catchup",
+  "risk": "2",
+  "title": "Slashed operator will not be able to become an operator again by bonding tokens",
+  "issueId": 264,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/264"
+}
