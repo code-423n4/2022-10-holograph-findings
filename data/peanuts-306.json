@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "peanuts",
+  "risk": "2",
+  "title": "Jobs can get stuck if no operator executes the job",
+  "issueId": 306,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/306"
+}
