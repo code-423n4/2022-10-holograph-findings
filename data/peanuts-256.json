@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "peanuts",
+  "risk": "2",
+  "title": "Current calculation of _getBasedBondAmount and _getCurrentBondAmount restricts the number of pods that an operator can bond in",
+  "issueId": 256,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/256"
+}
