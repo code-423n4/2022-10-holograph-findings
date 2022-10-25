@@ -86,6 +86,7 @@ to
 to save gas
 
 we are converting the following code to save gas, https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographRegistry.sol#L175-L177
+(there are many instanes like this, I just list one as an example)
 
 the new code is
 ```
