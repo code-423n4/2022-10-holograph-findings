@@ -110,6 +110,9 @@ function _popOperator(uint256 pod, uint256 operatorIndex) private {
 
 Each `event` should use three `indexed` fields if there are three or more fields
 
+```
+event SecondarySaleFees(uint256 tokenId, address[] recipients, uint256[] bps);
+```
 
 ### N-04 CONSIDER MAKING CONTRACT PAUSABLE TO HAVE SOME PROTECTION AGAINST ONGOING EXPLOITS
 
