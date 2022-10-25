@@ -119,7 +119,7 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographBri
 Note: The calculated byte value may be included as a comment instead.
 
 ## Require Statement at the Top of Code Block
-It is a good practice to allow an anticipated failed transaction to transpire as early as possible to avoid any unnecessary wastage of gas. `doNotRevert' is an operator inputted boolean which will determine whether or not the function call is going to revert. Consider placing the following require statement at the beginning of the code block: 
+It is a good practice to allow an anticipated failed transaction to transpire as early as possible to avoid any unnecessary wastage of gas. Among all operator inputted parameters, `doNotRevert' is a boolean which will directly determine whether or not the function call is going to revert. Consider placing the following require statement at the beginning of the code block: 
  
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographBridge.sol#L233
 
@@ -188,3 +188,14 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/module/Layer
     return gasPrice * gasLimit * 11 * dstPriceRatio / 10**11;
 ```
 Note: The original code expression may be commented to augment the refactored expression. 
+
+## Lines Too Long
+Lines in source code are typically limited to 80 characters, but it’s reasonable to stretch beyond this limit when need be as monitor screens theses days are comparatively larger. Considering the files will most likely reside in GitHub that will have a scroll bar automatically kick in when the length is over 164 characters, all code lines and comments should be split when/before hitting this length. Keep line width to max 120 characters for better readability where possible. Here is one of the instances entailed:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L289
+
+## No Withdraw Function for ETH
+Contracts receiving native token payments via `receive() external payable {}` have no method to withdraw the Ether. Devoid of implementing a way to withdraw funds or send them to another account, there is no built in way to release the money. The Ether is stuck on the contract balance forever. Here are some some of the instances entailed:
+
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L251
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L962
