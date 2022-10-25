@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0x52",
+  "risk": "3",
+  "title": "Adversary can cause malicious slashing of operators by creating malicous token and setting gas limit above chain block gas limit",
+  "issueId": 505,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/505"
+}
