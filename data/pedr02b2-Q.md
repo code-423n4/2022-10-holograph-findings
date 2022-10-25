@@ -72,8 +72,11 @@ https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a83524
 consider fixing the following typos, spelling mistakes and incomplete comments for the sake of readability
 
 PA1D.sol
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L466
 
-line466 @dev Function can only we called by owner, admin, or identity wallet. (should be "Function can only 'be' called by owner,)
+@dev Function can only we called by owner, admin, or identity wallet. (should be "Function can only 'be' called by owner,)
+
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L203
 
 line 203 @return Returns true is message sender is an owner. should b2 (@return Returns true 'if' message sender is an owner.)
 
@@ -83,10 +86,12 @@ https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a83524
 
 ### Remove @devs comments with regard to code use 
 
-holographoperator.sol line 487
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L487
 
      * @dev would be a good idea to check payload gas price here and if it is significantly lower than current amount
      *      to set zero address as operator to not lock-up an operator unnecessarily
+
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L617
 
  paid.sol line617
   // SuperRare
@@ -98,7 +103,9 @@ holographoperator.sol line 487
 
 consider completing this comment to help with readability and understaning what this part of the code does.
 
-line 666 // this information is outside of the scope of our
+PA1D.sol line 666 // this information is outside of the scope of our
+
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L666
 
 ### Redundant code left in the .sol files
 
