@@ -5,5 +5,3 @@ https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/Hol
 https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC20.sol#L557
 
 
-reference :
-https://code4rena.com/reports/2022-06-nibbl/#l-05-_safemint-should-be-used-rather-than-_mint-wherever-possible
