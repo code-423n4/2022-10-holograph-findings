@@ -25,3 +25,10 @@ The owner can set itself as a unique payoutAddresses in the configurePayouts fun
 
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L471-L480
 https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/enforcer/PA1D.sol#L497-L520
+
+##[Low-04] Not compatible with Rebasing/Deflationary/Inflationary tokens 
+In the HolographOperator contract, UtilityTokens are not supported as rebasing/deflationary/inflationary tokens whose balance changes during transfers or over time.
+This can lead to failed withdrawals or lost assets due to balances different from _bondedAmounts
+
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L839-L840
+https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L889-L890
