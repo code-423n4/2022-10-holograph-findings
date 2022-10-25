@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "nooneisking",
+  "risk": "2",
+  "title": "New deployers can remove the original owner - possible hijacking can happen",
+  "issueId": 281,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/281"
+}
