@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "JrNet",
+  "risk": "2",
+  "title": "Missing check of address(0) while adding address to approval list",
+  "issueId": 408,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/408"
+}
