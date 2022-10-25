@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "d3e4",
+  "risk": "2",
+  "title": "`_payoutToken[s]()` is not compatible with ERC20-tokens which revert on zero value transfer",
+  "issueId": 454,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/454"
+}
