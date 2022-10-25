@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "rbserver",
+  "risk": "3",
+  "title": "It is possible that operator loses sent ETH after calling `HolographOperator` contract's `executeJob` function",
+  "issueId": 418,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/418"
+}
