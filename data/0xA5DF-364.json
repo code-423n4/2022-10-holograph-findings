@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0xA5DF",
+  "risk": "3",
+  "title": "If user sets a low `gasPrice` the operator would have to choose between being locked out of the pod or executing the job anyway",
+  "issueId": 364,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/364"
+}
