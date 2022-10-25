@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0xSmartContract",
+  "risk": "2",
+  "title": "Risk of reuse of signatures across forks due to lack of chainID validation",
+  "issueId": 460,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/460"
+}
