@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Trust",
+  "risk": "3",
+  "title": "Royalties cannot be collected for many ERC20 tokens (USDT, BNB and many more) due to use of transfer function.",
+  "issueId": 457,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/457"
+}
