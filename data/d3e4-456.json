@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "d3e4",
+  "risk": "2",
+  "title": "`_payoutToken[s]()` is not compatible with tokens with missing return value",
+  "issueId": 456,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/456"
+}
