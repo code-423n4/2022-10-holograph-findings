@@ -1,19 +1,18 @@
 # QA Report for Holograph contest
 
 ## Overview
-During the audit, 7 non-critical issues were found.
+During the audit, 6 non-critical issues were found.
 
 № | Title | Risk Rating  | Instance Count
 --- | --- | --- | ---
 NC-1 | [Order of Functions](#nc-1-order-of-functions) | Non-Critical | 24
 NC-2 | [Missing NatSpec](#nc-2-missing-natspec) | Non-Critical | 77
-NC-3 | [No error message in ```require```](#nc-3-no-error-message-in-require) | Non-Critical | 34
-NC-4 | [Open TODOs](#nc-4-open-todos) | Non-Critical | 1
-NC-5 | [Commented code](#nc-5-commented-code) | Non-Critical | 7
-NC-6 | [Scientific notation may be used](#nc-6-scientific-notation-may-be-used) | Non-Critical | 11
-NC-7 | [Constants may be used](#nc-7-constants-may-be-used) | Non-Critical | 1
+NC-3 | [Open TODOs](#nc-3-open-todos) | Non-Critical | 1
+NC-4 | [Commented code](#nc-4-commented-code) | Non-Critical | 7
+NC-5 | [Scientific notation may be used](#nc-5-scientific-notation-may-be-used) | Non-Critical | 11
+NC-6 | [Constants may be used](#nc-6-constants-may-be-used) | Non-Critical | 1
 
-## Non-Critical Risk Findings (7)
+## Non-Critical Risk Findings (6)
 ### NC-1. Order of Functions
 ##### Description
 According to [Style Guide](https://docs.soliditylang.org/en/v0.8.16/style-guide.html#order-of-functions), ordering helps readers identify which functions they can call and to find the constructor and fallback definitions easier.  
@@ -107,48 +106,7 @@ NatSpec is missing for 77 functions in 6 contracts.
 Add NatSpec for all functions.
 
 #
-### NC-3. No error message in ```require```
-##### Instances
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L274
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L279
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L292
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L296
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L361
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L374
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L387
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L392
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L525
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L529
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L660
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC721.sol#L668
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L229
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L233
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L240
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L244
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L255
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L259
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L272
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L276
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L331
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L335
- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L348
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L356
- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L385
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L389
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L403
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L408
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L437
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L442
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L483
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L487
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L507
-- https://github.com/code-423n4/2022-10-holograph/blob/main/src/enforcer/HolographERC20.sol#L511
-
-##### Recommendation
-Add error messages.
-
-#
-### NC-4. Open TODOs
+### NC-3. Open TODOs
 ##### Instances
 HolographOperator.sol has 1 open TODO:
 - https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L701
@@ -157,7 +115,7 @@ HolographOperator.sol has 1 open TODO:
 Resolve issues.
 
 #
-### NC-5. Commented code
+### NC-4. Commented code
 ##### Instances
 - https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographOperator.sol#L1176
 - https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/PA1D.sol#L413
@@ -171,7 +129,7 @@ Resolve issues.
 Delete commented code.
 
 #
-### NC-6. Scientific notation may be used
+### NC-5. Scientific notation may be used
 ##### Description
 For readability, it is better to use scientific notation.
 
@@ -193,7 +151,7 @@ For 10000:
 Replace ```10000``` with ```10e4```.
 
 #
-### NC-7. Constants may be used
+### NC-6. Constants may be used
 ##### Description
 Constants may be used instead of literal values.
 
