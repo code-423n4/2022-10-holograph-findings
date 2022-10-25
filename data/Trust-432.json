@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Trust",
+  "risk": "2",
+  "title": " Attacker can force chaotic operator behavior",
+  "issueId": 432,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/432"
+}
