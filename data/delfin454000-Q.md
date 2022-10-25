@@ -35,7 +35,7 @@ ___
 ### NatSpec does not match function
 NatSpec statements (including `@dev @param`) do not relate directly to the function below them (a function which may be incomplete). 
 
-[HolographOperator.sol: L656-669](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographBridge.sol#L656-L669)
+[HolographOperator.sol: L656-669](https://github.com/code-423n4/2022-10-holograph/blob/f8c2eae866280a1acfdc8a8352401ed031be1373/contracts/HolographOperator.sol#L656-L669)
 ```solidity
    * @dev Will provide exact costs on protocol and message side, combine the two to get total
    * @dev @param toChain holograph chain id of destination chain for payload
