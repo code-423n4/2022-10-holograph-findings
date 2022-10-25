@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "joestakey",
+  "risk": "3",
+  "title": "Primary operator can unbond to avoid slashing and DOS job execution",
+  "issueId": 448,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/448"
+}
