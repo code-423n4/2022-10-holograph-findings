@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0x5rings",
+  "risk": "2",
+  "title": "Excessive payout list of addresses `_payoutEth` would lead to a revert. Rendering users unable to receive eth",
+  "issueId": 279,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/279"
+}
