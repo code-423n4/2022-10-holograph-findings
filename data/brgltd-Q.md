@@ -1,4 +1,4 @@
-## [01] Consistent use of ECDSA.recover
+# [01] Consistent use of ECDSA.recover
 
 ## Impact
 
@@ -28,7 +28,7 @@ diff --git a/HolographFactory.sol.orig b/HolographFactory.sol
 +   );
 ```
 
-## [02] Lack of checks in `_mint` to validate if the recipient is able to receive ERC721
+# [02] Lack of checks in `_mint` to validate if the recipient is able to receive ERC721
 
 ## Impact
 
