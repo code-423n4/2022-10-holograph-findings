@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "brgltd",
+  "risk": "2",
+  "title": "`PA1D._payoutTokens()` won't work for USDT and other inconsistent ERC20 tokens.",
+  "issueId": 441,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/441"
+}
