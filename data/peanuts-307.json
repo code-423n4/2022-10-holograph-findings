@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "peanuts",
+  "risk": "2",
+  "title": "Wrong slashing calculation rewards for operator that did not do his job",
+  "issueId": 307,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/307"
+}
