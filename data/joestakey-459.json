@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "joestakey",
+  "risk": "2",
+  "title": "`_payoutToken()` breaks if `tokenAddress` is USDT - for Ethereum contracts.",
+  "issueId": 459,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/459"
+}
