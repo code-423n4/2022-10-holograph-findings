@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Deivitto",
+  "risk": "2",
+  "title": "Unbounded loop can make `_payoutEth`, , `_payoutToken`, `_payoutTokens` fail",
+  "issueId": 490,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/490"
+}
