@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Deivitto",
+  "risk": "3",
+  "title": " Reentrancy can increase `allowance` can be used to take more funds than expected",
+  "issueId": 497,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/497"
+}
