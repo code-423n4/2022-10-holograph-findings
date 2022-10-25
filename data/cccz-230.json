@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cccz",
+  "risk": "3",
+  "title": "After resetOperator, the old operator can unbind all new operators after its position",
+  "issueId": 230,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/230"
+}
