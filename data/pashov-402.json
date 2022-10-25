@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "pashov",
+  "risk": "2",
+  "title": "Tokens with non-compliant ERC20 `transfer` like USDT will result in a revert in `PA1D.sol`",
+  "issueId": 402,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/402"
+}
