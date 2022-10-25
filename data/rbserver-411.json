@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "rbserver",
+  "risk": "2",
+  "title": "Users are unable to call `HolographERC20` contract's `permit` function with valid signatures, which have `v` being 0 or 1, that are signed by using `web3.eth.sign`",
+  "issueId": 411,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/411"
+}
