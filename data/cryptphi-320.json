@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cryptphi",
+  "risk": "3",
+  "title": "Holograph contracts can be deployed by any user successfully through user-crafted signature and signer input",
+  "issueId": 320,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/320"
+}
