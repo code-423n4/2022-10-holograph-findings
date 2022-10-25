@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0x5rings",
+  "risk": "2",
+  "title": "LayerZeroModule's Send() function uses .send(), when transferring eth, use call() instead of transfer()",
+  "issueId": 277,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/277"
+}
