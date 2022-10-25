@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "joestakey",
+  "risk": "2",
+  "title": "`_payoutEth()` calculates `balance` with an offset, always leaving dust `ETH` in the contract",
+  "issueId": 476,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/476"
+}
