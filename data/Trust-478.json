@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "Trust",
+  "risk": "2",
+  "title": "MED: HolographOperator.sol 's resetOperator() function allows malicious or hacked admin to permanently freeze operator's bonded tokens.",
+  "issueId": 478,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/478"
+}
