@@ -95,3 +95,31 @@ modify `sourceMintBatch` function to revert in case array's length are not equal
 
 
 `
+
+***********************************************************************
+***********************************************************************
+***********************************************************************
+
+# Summary
+
+There is not input check in `getPodOperatorsLength()` and `getPodOperators()` functions.
+
+# Contract in scope
+
+HolographERC20.sol
+
+# Issue detail
+`getPodOperatorsLength()` and `getPodOperators()` functions raise underflow error when length's `_operatorPods` and `pods` parameter are equals to 0. 
+
+# Suggestion
+
+modify `getPodOperatorsLength()` and `getPodOperators()` functions to revert in case `_operatorPods.length` is equals to 0 and keep existing validation:
+`
+
+  function getPodOperatorsLength(uint256 pod) external view returns (uint256) {
+    require(_operatorPods.length != 0 && _operatorPods.length >= pod, "HOLOGRAPH: pod does not exist");
+    return _operatorPods[pod - 1].length;
+  }
+
+
+`
