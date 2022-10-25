@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "joestakey",
+  "risk": "2",
+  "title": "`_payoutEth()` gas computation can make call revert even if `balance` is sufficient",
+  "issueId": 467,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/467"
+}
