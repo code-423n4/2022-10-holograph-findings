@@ -12,8 +12,9 @@
 | [LOW&#x2011;7](#LOW&#x2011;7) | Low Level Calls With Solidity Version 0.8.14 Can Result In Optimiser Bug | 5 |
 | [LOW&#x2011;8](#LOW&#x2011;8) | Usage of `payable.transfer` can lead to loss of funds  | 1 |
 | [LOW&#x2011;9](#LOW&#x2011;9) | `ecrecover` may return empty address | 2 |
+| [LOW&#x2011;10](#LOW&#x2011;10) | `HolographFactory.deployHolographableContract()` can overpopulate `HolographRegistry._holographableContracts` | 1 |
 
-Total: 119 instances over 9 issues
+Total: 120 instances over 10 issues
 
 ### Non-critical Issues
 | |Issue|Instances|
@@ -30,8 +31,9 @@ Total: 119 instances over 9 issues
 | [NC&#x2011;10](#NC&#x2011;10) | Lines are too long | 4 |
 | [NC&#x2011;11](#NC&#x2011;11) | Use `bytes.concat()` | 44 |
 | [NC&#x2011;12](#NC&#x2011;12) | Use of `ecrecover` is susceptible to signature malleability | 2 |
+| [NC&#x2011;13](#NC&#x2011;13) | Commented code | 1 |
 
-Total: 235 instances over 12 issues
+Total: 236 instances over 13 issues
 
 ## Low Risk Issues
 
@@ -1013,6 +1015,24 @@ https://github.com/code-423n4/2022-10-holograph/tree/main/contracts/HolographFac
 See the solution here: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.4.0/contracts/cryptography/ECDSA.sol#L68
 
 
+### <a href="#Summary">[LOW&#x2011;10]</a><a name="LOW&#x2011;10"> `HolographFactory.deployHolographableContract()` can overpopulate `HolographRegistry._holographableContracts`
+
+The `require` checks in `HolographFactory.deployHolographableContract()` can easily by bypassed by sending an invalid signature and `signer` = 0x0.
+
+As a result, this will deploy a holographableContract and update the `HolographRegistry` and push an additional item to `HolographRegistry._holographableContracts`.
+
+Due to `_holographableContracts.push(contractAddress);` in `HolographRegistryInterface(registry).setHolographedHashAddress(hash, holographerAddress);`
+
+A malicious user can overpopulate the `_holographableContracts` array with redundant data, increasing gas costs when `_holographableContracts` is iterated through.
+
+#### <ins>Proof Of Concept</ins>
+```
+HolographRegistryInterface(registry).setHolographedHashAddress(hash, holographerAddress);
+```
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/HolographFactory.sol#L259
+
+#### <ins>Recommended Mitigation Steps</ins>
+Implement valid access control on the `HolographFactory.deployHolographableContract()` to ensure only the relevant can deploy
 
 ## Non Critical Issues
 
@@ -2450,4 +2470,54 @@ https://github.com/code-423n4/2022-10-holograph/tree/main/contracts/HolographFac
 Consider using OpenZeppelin’s ECDSA library (which prevents this malleability) instead of the built-in function.
 
 
+### <a href="#Summary">[NC&#x2011;13]</a><a name="NC&#x2011;13"> Commented code
 
+#### <ins>Proof Of Concept</ins>
+
+```
+  //   function sourceMintBatch(address to, uint224[] calldata tokenIds) external onlySource {
+  //     require(tokenIds.length < 1000, "ERC721: max batch size is 1000");
+  //     uint32 chain = _chain();
+  //     uint256 token;
+  //     for (uint256 i = 0; i < tokenIds.length; i++) {
+  //       require(!_burnedTokens[token], "ERC721: can't mint burned token");
+  //       token = uint256(bytes32(abi.encodePacked(chain, tokenIds[i])));
+  //       require(!_burnedTokens[token], "ERC721: can't mint burned token");
+  //       _mint(to, token);
+  //     }
+  //   }
+
+  /**
+   * @dev Allows for source smart contract to mint a batch of tokens.
+   */
+  //   function sourceMintBatch(address[] calldata wallets, uint224[] calldata tokenIds) external onlySource {
+  //     require(wallets.length == tokenIds.length, "ERC721: array length missmatch");
+  //     require(tokenIds.length < 1000, "ERC721: max batch size is 1000");
+  //     uint32 chain = _chain();
+  //     uint256 token;
+  //     for (uint256 i = 0; i < tokenIds.length; i++) {
+  //       token = uint256(bytes32(abi.encodePacked(chain, tokenIds[i])));
+  //       require(!_burnedTokens[token], "ERC721: can't mint burned token");
+  //       _mint(wallets[i], token);
+  //     }
+  //   }
+
+  /**
+   * @dev Allows for source smart contract to mint a batch of tokens.
+   */
+  //   function sourceMintBatchIncremental(
+  //     address to,
+  //     uint224 startingTokenId,
+  //     uint256 length
+  //   ) external onlySource {
+  //     uint32 chain = _chain();
+  //     uint256 token;
+  //     for (uint256 i = 0; i < length; i++) {
+  //       token = uint256(bytes32(abi.encodePacked(chain, startingTokenId)));
+  //       require(!_burnedTokens[token], "ERC721: can't mint burned token");
+  //       _mint(to, token);
+  //       startingTokenId++;
+  //     }
+  //   }
+```
+https://github.com/code-423n4/2022-10-holograph/blob/main/contracts/enforcer/HolographERC721.sol#L527-L570
