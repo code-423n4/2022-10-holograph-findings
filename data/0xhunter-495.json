@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "0xhunter",
+  "risk": "3",
+  "title": "it is possible to front run the deployHolographableContract  and alter the configuration ",
+  "issueId": 495,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/495"
+}
