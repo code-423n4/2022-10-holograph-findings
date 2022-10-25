@@ -1,0 +1,8 @@
+{
+  "contest": 170,
+  "handle": "cryptphi",
+  "risk": "2",
+  "title": "No zero value return check in ecrecover in signature verification in HolographFactory contract",
+  "issueId": 357,
+  "issueUrl": "https://github.com/code-423n4/2022-10-holograph-findings/issues/357"
+}
