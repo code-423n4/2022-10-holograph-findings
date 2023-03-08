@@ -1,3 +1,11 @@
+---
+sponsor: "Holograph"
+slug: "2022-10-holograph"
+date: "2022-12-15"  
+title: "Holograph contest"
+findings: "https://github.com/code-423n4/2022-10-holograph-findings/issues"
+contest: 170
+---
 
 # Overview
 
